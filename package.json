@@ -1,0 +1,34 @@
+{
+  "name": "starkov-mcp",
+  "version": "1.2.0",
+  "description": "Official Starkov Quantitative Sports Prediction Market MCP Client Bridge & Non-Custodial Live Execution Relay (Kalshi v2 RSA-PSS & Polymarket CLOB L2).",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FUTFURY/starkov-mcp.git"
+  },
+  "homepage": "https://starkov-app.vercel.app/doc?section=mcp-copilot",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "kalshi",
+    "polymarket",
+    "prediction-markets",
+    "sports-analytics",
+    "non-custodial-relay",
+    "starkov"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "starkov-mcp": "./bin/starkov-mcp-bridge.mjs",
+    "starkov-relay": "./starkov-relay.mjs"
+  },
+  "scripts": {
+    "start": "node starkov-relay.mjs",
+    "relay": "node starkov-relay.mjs",
+    "mcp:bridge": "node ./bin/starkov-mcp-bridge.mjs",
+    "mcp:stdio": "node ./starkov-mcp-stdio.cjs"
+  }
+}
